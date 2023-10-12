@@ -1,9 +1,12 @@
 public class subarray {
      public static void sbaray(int[]number){
+
         for(int i=0; i<number.length; i++){
             for(int j=i; j<number.length; j++){
                 for(int k=i; k<j; k++){
                     System.out.print(number[k]+" ");
+                   
+                
                 }
                 System.out.println();
             }
