@@ -1,6 +1,6 @@
 package recursion;
 
-public class two {
+public class recursio {
     public static int tilingProb(int n){
         //base case
         if(n==0 || n==1){

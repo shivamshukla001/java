@@ -36,7 +36,8 @@ public class nqueens {
         //base case
         if(row==board.length)
         {
-          printboard(board);
+        //   printboard(board);
+        count++;
           return;
         }
 
@@ -57,8 +58,11 @@ public class nqueens {
             System.out.print(board [i] [j] + " ");
         }
       }
-      System.out.println();
     }
+
+
+    /// count the possibilty of solution
+    static int count=0;
     
     public static void main(String[] args) {
         int n=4;
@@ -70,5 +74,6 @@ public class nqueens {
             }
         }
       queen(board, 0);
+      System.out.println("total number of ways to put queen is:"+ count);
     }
 }
